@@ -3,10 +3,10 @@ import AddTodo from '../containers/AddTodo'
 import VisibleTodoList from '../containers/VisibleTodoList'
 import Footer from './Footer';
 
-const App = (props) => {
+const App = () => {
     return (
         <div>
-            <AddTodo todos={props.todos} />
+            <AddTodo />
             <VisibleTodoList />
             <Footer />
         </div>
