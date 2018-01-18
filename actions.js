@@ -13,6 +13,6 @@ export const VisibilityFilters = {
 /* Action Creators */
 
 export const addTodo = (text) => ({ type: ADD_TODO, text, completed: false })
-export const toggleTodo = (index) => { type: TOGGLE_TODO, index }
-export const setVisibilityFilter = (filter) => { type: SET_VISIBILITY_FILTER, filter }
+export const toggleTodo = (index) => { debugger; return { type: TOGGLE_TODO, index } }
+export const setVisibilityFilter = (filter) => ({ type: SET_VISIBILITY_FILTER, filter })
 

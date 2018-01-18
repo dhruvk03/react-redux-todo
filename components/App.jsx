@@ -4,6 +4,7 @@ import VisibleTodoList from '../containers/VisibleTodoList'
 import Footer from './Footer';
 
 const App = () => {
+    console.log('Rendering App');
     return (
         <div>
             <AddTodo />

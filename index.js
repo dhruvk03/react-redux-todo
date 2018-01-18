@@ -6,10 +6,10 @@ import todoApp from './reducers'
 import App from './components/App'
 
 const initialState = {
-    todos: [{ id: 123, text: 'hello', completed: false }]
+    todos: [{ text: 'hello', completed: false }]
 };
 
-const store = createStore(todoApp, initialState)
+const store = createStore(todoApp)
 
 ReactDOM.render(
     <Provider store={store}>

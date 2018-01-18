@@ -9,6 +9,7 @@ import {
 const { SHOW_ALL } = VisibilityFilters;
 
 function VisibilityFilter(state = SHOW_ALL, action) {
+    debugger
     switch (action.type) {
         case SET_VISIBILITY_FILTER: return action.filter
         default: return state
@@ -28,7 +29,7 @@ function todos(state = [], action) {
         case TOGGLE_TODO:
             return state.map((todo, index) => {
                 if (index === action.index) {
-                    return Object.assign({}, todo, { completed: !completed })
+                    return Object.assign({}, todo, { completed: !todo.completed })
                 }
                 return todo
             })
